@@ -1,0 +1,129 @@
+html {
+    background: url(images/bg.jpg);
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    color: white;
+    background-color: saddlebrown;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.control-panel {
+    background-image: url("images/panel.jpg");
+    height: 120px;
+    border-radius: 2px;
+}
+
+.new-note {
+    float: left;
+    background-image: url("images/newnote.png");
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 120px;
+}
+
+.new-note > .text-input {
+    resize: none;
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 60px;
+    margin-left: 4px;
+    margin-top: 12px;
+    font-family: cursive;
+    background-color: transparent;
+}
+
+.new-note > button {
+    margin-top: 14px;
+    margin-left: 2px;
+}
+
+.trash {
+    float: right;
+    background-image: url("images/trash.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 120px;
+}
+
+.trash > button {
+    margin-top: 92px;
+    margin-right: 4px;
+}
+
+
+.notes-panel {
+    margin-top: 20px;
+}
+
+.note {
+    box-sizing: border-box;
+    float: left;
+    width: 229px;
+    height: 227px;
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-bottom: 36px;
+    padding: 4px 4px;
+    color: black;
+}
+
+.blue {
+    background-image: url("images/blue.png");
+}
+
+.brown {
+    background-image: url("images/brown.png");
+}
+
+.green {
+    background-image: url("images/green.png");
+}
+
+.purple {
+    background-image: url("images/purple.png");
+}
+
+.red {
+    background-image: url("images/red.png");
+}
+
+.note-controls {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.control {
+    float: right;
+    margin-top: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.check-box {
+    margin-top: 3px;
+}
+
+.note-content {
+    width: 100%;
+    height: 170px;
+    overflow: auto;
+    font-family: cursive;
+    font-size: 14px;
+    outline: none;
+}
