@@ -1,5 +1,5 @@
 html {
-    background: url(images/bg.jpg);
+    background: url(../images/bg.jpg);
     background-repeat: no-repeat; 
     background-position: center center;
     background-attachment: fixed;
@@ -22,14 +22,14 @@ button {
 }
 
 .control-panel {
-    background-image: url("images/panel.jpg");
+    background-image: url("../images/panel.jpg");
     height: 120px;
     border-radius: 2px;
 }
 
 .new-note {
     float: left;
-    background-image: url("images/newnote.png");
+    background-image: url("../images/newnote.png");
     background-repeat: no-repeat;
     width: 320px;
     height: 120px;
@@ -54,7 +54,7 @@ button {
 
 .trash {
     float: right;
-    background-image: url("images/trash.png");
+    background-image: url("../images/trash.png");
     background-repeat: no-repeat;
     background-position: center top;
     height: 120px;
@@ -83,23 +83,23 @@ button {
 }
 
 .blue {
-    background-image: url("images/blue.png");
+    background-image: url("../images/blue.png");
 }
 
 .brown {
-    background-image: url("images/brown.png");
+    background-image: url("../images/brown.png");
 }
 
 .green {
-    background-image: url("images/green.png");
+    background-image: url("../images/green.png");
 }
 
 .purple {
-    background-image: url("images/purple.png");
+    background-image: url("../images/purple.png");
 }
 
 .red {
-    background-image: url("images/red.png");
+    background-image: url("../images/red.png");
 }
 
 .note-controls {
