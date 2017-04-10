@@ -10,7 +10,7 @@ var loadNotes = function () {
     for (key in localStorage) {
         if (key.search("note-") === 0) {
             var note = createNote(localStorage[key], key);
-            note.prependTo(".notes-panel");
+            note.appendTo(".notes-panel");
             var idNr = Number(key.substr(5));
             if (idMax <= idNr) {
                 idMax = idNr+1;
@@ -100,7 +100,7 @@ var addNoteEventHandler = function () {
     var noteId = "note-" + idMax;
 
     var note = createNote(noteText, noteId);
-    note.prependTo(".notes-panel");
+    note.appendTo(".notes-panel");
     localStorage.setItem(noteId, noteText);
 
     idMax += 1;
@@ -123,5 +123,9 @@ var addEventDOMListeners = function () {
     $(".remove-checked-btn").click(removeCheckedEventHandler);
 };
 
-$(document).ready(loadNotes);
-$(document).ready(addEventDOMListeners);
+var main = function () {
+    loadNotes();
+    addEventDOMListeners();
+}
+
+$(document).ready(main);
